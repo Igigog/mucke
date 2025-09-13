@@ -10,6 +10,7 @@ environment:
 
 dependencies:
   async_task: ^1.1.1
+  audio_metadata_reader: ^1.4.2
   audio_service: ^0.18.18  # MIT
   audio_session: ^0.2.2  # MIT
   collection: ^1.19.1  # BSD 3
@@ -21,7 +22,11 @@ dependencies:
   fimber_io: ^0.7.0  # Apache 2.0
   flutter:
     sdk: flutter
-  flutter_fimber: ^0.7.1  # Apache 2.0
+  flutter_fimber:  # Apache 2.0
+    git:
+      url: https://github.com/Igigog/flutter-fimber.git
+      rev: HEAD
+      path: flutter_fimber
   #flutter_gen: ^5.11.0
   flutter_localizations:
     sdk: flutter
@@ -31,7 +36,7 @@ dependencies:
   image: ^4.5.4
   intl: ^0.20.2
   just_audio: ^0.10.5  # MIT
-  metadata_god: ^1.1.0
+  # metadata_god: ^1.1.0
   mobx: ^2.5.0  # MIT
   optimization_battery: ^0.0.7  # MIT
   package_info_plus: ^9.0.0

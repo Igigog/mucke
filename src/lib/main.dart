@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:metadata_god/metadata_god.dart';
 import 'package:path_provider/path_provider.dart';
 
 import '../../../l10n/localizations.dart';
@@ -29,7 +28,6 @@ Future<void> main() async {
 
   await setupGetIt();
 
-  MetadataGod.initialize();
   final session = await AudioSession.instance;
   await session.configure(const AudioSessionConfiguration.music());
 

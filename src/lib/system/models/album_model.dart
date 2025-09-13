@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:drift/drift.dart';
-import 'package:metadata_god/metadata_god.dart';
+import 'package:audio_metadata_reader/audio_metadata_reader.dart';
 
 import '../../domain/entities/album.dart';
 import '../datasources/drift_database.dart';
@@ -32,12 +32,12 @@ class AlbumModel extends Album {
   }
 
   factory AlbumModel.fromMetadata({
-    required Metadata songData,
+    required AudioMetadata songData,
     required int albumId,
     String? albumArtPath,
     Color? color,
   }) {
-    final artist = songData.albumArtist ?? songData.artist;
+    final artist = songData.artist ?? songData.artist;
 
     return AlbumModel(
       id: albumId,
@@ -45,7 +45,7 @@ class AlbumModel extends Album {
       artist: artist ?? DEF_ARTIST,
       albumArtPath: albumArtPath,
       color: color,
-      pubYear: songData.year,
+      pubYear: songData.year?.year,
     );
   }
 
