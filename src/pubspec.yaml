@@ -38,7 +38,7 @@ dependencies:
   just_audio: ^0.10.5  # MIT
   # metadata_god: ^1.1.0
   mobx: ^2.5.0  # MIT
-  optimization_battery: ^0.0.7  # MIT
+  # optimization_battery: ^0.0.7  # MIT
   package_info_plus: ^9.0.0
   page_indicator_plus: ^1.0.4  # MIT
   path: ^1.9.1  # BSD 3

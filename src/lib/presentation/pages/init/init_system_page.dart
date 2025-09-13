@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
-import 'package:optimization_battery/optimization_battery.dart';
 
 import '../../../l10n/localizations.dart';
 import '../../state/import_store.dart';
@@ -36,21 +35,21 @@ class InitSystemPage extends StatelessWidget {
             InfoCard(
               text: L10n.of(context)!.batteryExplanation,
             ),
-            BatteryOptimizationsObserver(builder: (context, isIgnore) {
-              return SwitchListTile(
-                title: Text(L10n.of(context)!.openBattery),
-                subtitle: Text(
-                  (isIgnore != null && !isIgnore)
-                      ? L10n.of(context)!.disableBattery
-                      : L10n.of(context)!.disabledBattery,
-                  style: TEXT_SMALL_SUBTITLE,
-                ),
-                value: isIgnore != null && isIgnore,
-                onChanged: (_) {
-                  OptimizationBattery.openBatteryOptimizationSettings();
-                },
-              );
-            }),
+            // BatteryOptimizationsObserver(builder: (context, isIgnore) {
+            //   return SwitchListTile(
+            //     title: Text(L10n.of(context)!.openBattery),
+            //     subtitle: Text(
+            //       (isIgnore != null && !isIgnore)
+            //           ? L10n.of(context)!.disableBattery
+            //           : L10n.of(context)!.disabledBattery,
+            //       style: TEXT_SMALL_SUBTITLE,
+            //     ),
+            //     value: isIgnore != null && isIgnore,
+            //     onChanged: (_) {
+            //       OptimizationBattery.openBatteryOptimizationSettings();
+            //     },
+            //   );
+            // }),
             const Divider(
               height: 16.0,
             ),
