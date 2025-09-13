@@ -140,32 +140,10 @@ class LocalMusicFetcherImpl implements LocalMusicFetcher {
       albumIdMap[albumString] = albumId;
       newAlbumId = max(newAlbumId, albumId + 1);
 
-      Uint8List? albumArt = songData.picture?.data;
+      final Uint8List? albumArt = songData.picture?.data;
 
-      // fallback to get albumArt
-      if (albumArt == null) {
-        // get directory of song and look for image files
-        final images = await songFile.parent
-            .list(recursive: false, followLinks: false)
-            .where((item) =>
-                FileSystemEntity.isFileSync(item.path) &&
-                IMAGE_EXTENSIONS.contains(p.extension(item.path).toLowerCase()))
-            .asyncMap((item) => File(item.path))
-            .toList();
-        for (final image in images) {
-          try {
-            albumArt = image.readAsBytesSync();
-            break;
-          } catch (e) {
-            _log.e('Could not read image file: ${image.path}');
-          }
-        }
-      }
-
-      if (albumArt != null) {
-        albumArtMap[albumId] = await cacheAlbumArt(albumArt, albumId);
-      }
-
+      albumArtMap[albumId] = await cacheAlbumArt(albumArt, albumId);
+    
       final String? songArtist = songData.artist;
       final String artistName = albumArtist ?? (songArtist ?? DEF_ARTIST);
 

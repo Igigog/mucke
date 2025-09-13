@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
+import '../../l10n/localizations.dart';
 import '../gradients.dart';
 import '../icons.dart';
 import '../state/cover_customization_store.dart';

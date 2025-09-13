@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
@@ -9,6 +8,7 @@ import '../../../domain/entities/home_widgets/history.dart';
 import '../../../domain/entities/playable.dart';
 import '../../../domain/entities/playlist.dart';
 import '../../../domain/entities/smart_list.dart';
+import '../../../l10n/localizations.dart';
 import '../../l10n_utils.dart';
 import '../../pages/album_details_page.dart';
 import '../../pages/artist_details_page.dart';

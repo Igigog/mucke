@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mucke/domain/entities/artist.dart';
 
 import '../../domain/entities/album.dart';
 import '../../domain/entities/song.dart';
+import '../../l10n/localizations.dart';
 import '../l10n_utils.dart';
 import '../state/album_page_store.dart';
 import '../state/audio_store.dart';

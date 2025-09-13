@@ -1,13 +1,13 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../domain/entities/playlist.dart';
 import '../../domain/entities/smart_list.dart';
+import '../../l10n/localizations.dart';
 import '../state/audio_store.dart';
 import '../state/music_data_store.dart';
 import '../state/navigation_store.dart';

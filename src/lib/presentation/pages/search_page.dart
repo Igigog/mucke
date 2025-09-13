@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mobx/mobx.dart';
 
 import '../../domain/entities/playable.dart';
+import '../../l10n/localizations.dart';
 import '../state/audio_store.dart';
 import '../state/navigation_store.dart';
 import '../state/search_page_store.dart';
@@ -308,7 +308,7 @@ class _SearchPageState extends State<SearchPage> {
                           ),
                         ),
                       ),
-                      for (int i in songs.asMap().keys)
+                      for (final int i in songs.asMap().keys)
                         SongListTile(
                           song: songs[i],
                           onTap: () => audioStore.playSong(
@@ -347,7 +347,7 @@ class _SearchPageState extends State<SearchPage> {
                           ),
                         ),
                       ),
-                      for (int i in smartlists.asMap().keys)
+                      for (final int i in smartlists.asMap().keys)
                         ListTile(
                           title: Text(smartlists[i].name),
                           leading: PlaylistCover(
@@ -387,7 +387,7 @@ class _SearchPageState extends State<SearchPage> {
                           ),
                         ),
                       ),
-                      for (int i in playlists.asMap().keys)
+                      for (final int i in playlists.asMap().keys)
                         ListTile(
                           title: Text(playlists[i].name),
                           leading: PlaylistCover(

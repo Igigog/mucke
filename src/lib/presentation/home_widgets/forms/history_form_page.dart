@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../domain/entities/home_widgets/history.dart';
+import '../../../l10n/localizations.dart';
 import '../../state/home_widget_forms/history_form_store.dart';
 import '../../state/navigation_store.dart';
 import '../../theming.dart';

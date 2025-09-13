@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../domain/entities/home_widgets/playlists.dart';
 import '../../../domain/entities/playlist.dart';
 import '../../../domain/entities/smart_list.dart';
+import '../../../l10n/localizations.dart';
 import '../../pages/playlist_page.dart';
 import '../../pages/smart_list_page.dart';
 import '../../state/audio_store.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 
 import '../../../domain/entities/playlist.dart';
+import '../../../l10n/localizations.dart';
 import '../../state/music_data_store.dart';
 
 class RemoveFromPlaylistTile extends StatelessWidget {

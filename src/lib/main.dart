@@ -2,12 +2,12 @@ import 'package:audio_session/audio_session.dart';
 import 'package:fimber_io/fimber_io.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:metadata_god/metadata_god.dart';
 import 'package:path_provider/path_provider.dart';
 
+import '../../../l10n/localizations.dart';
 import 'domain/actors/persistence_actor.dart';
 import 'domain/repositories/init_repository.dart';
 import 'injection_container.dart';

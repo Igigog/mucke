@@ -218,8 +218,8 @@ abstract class _SmartListStore with Store {
         iconString: cover.iconString,
         gradientString: cover.gradientString,
         timeChanged: DateTime.now(),
-        timeCreated: _smartList!.timeCreated,
-        timeLastPlayed: _smartList!.timeLastPlayed,
+        timeCreated: _smartList.timeCreated,
+        timeLastPlayed: _smartList.timeLastPlayed,
         shuffleMode: shuffleMode,
         filter: Filter(
           artists: selectedArtists.toList(),

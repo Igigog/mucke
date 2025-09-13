@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../../domain/entities/home_widgets/artist_of_day.dart';
 import '../../../domain/entities/shuffle_mode.dart';
+import '../../../l10n/localizations.dart';
 import '../../l10n_utils.dart';
 import '../../state/home_widget_forms/artistofday_form_store.dart';
 import '../../state/navigation_store.dart';

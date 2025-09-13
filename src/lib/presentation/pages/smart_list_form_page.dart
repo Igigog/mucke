@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:reorderables/reorderables.dart';
@@ -7,6 +6,7 @@ import 'package:reorderables/reorderables.dart';
 import '../../constants.dart';
 import '../../domain/entities/enums.dart';
 import '../../domain/entities/smart_list.dart';
+import '../../l10n/localizations.dart';
 import '../l10n_utils.dart';
 import '../state/music_data_store.dart';
 import '../state/navigation_store.dart';

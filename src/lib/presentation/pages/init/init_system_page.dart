@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 import 'package:optimization_battery/optimization_battery.dart';
 
+import '../../../l10n/localizations.dart';
 import '../../state/import_store.dart';
 import '../../state/settings_store.dart';
 import '../../theming.dart';
