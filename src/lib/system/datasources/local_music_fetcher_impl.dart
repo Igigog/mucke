@@ -142,7 +142,9 @@ class LocalMusicFetcherImpl implements LocalMusicFetcher {
 
       final Uint8List? albumArt = songData.picture?.data;
 
-      albumArtMap[albumId] = await cacheAlbumArt(albumArt, albumId);
+      if (albumArt != null) {
+        albumArtMap[albumId] = await cacheAlbumArt(albumArt, albumId);
+      }
     
       final String? songArtist = songData.artist;
       final String artistName = albumArtist ?? (songArtist ?? DEF_ARTIST);

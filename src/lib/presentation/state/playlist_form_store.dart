@@ -92,8 +92,8 @@ abstract class _PlaylistStore with Store {
         gradientString: cover.gradientString,
         shuffleMode: shuffleMode,
         timeChanged: DateTime.now(),
-        timeCreated: _playlist.timeCreated,
-        timeLastPlayed: _playlist.timeLastPlayed,
+        timeCreated: _playlist!.timeCreated,
+        timeLastPlayed: _playlist!.timeLastPlayed,
       ),
     );
   }
