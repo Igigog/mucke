@@ -31,11 +31,7 @@ dependencies:
   image: ^4.5.4
   intl: ^0.20.2
   just_audio: ^0.10.5  # MIT
-  metadata_god:
-    git:
-      url: https://github.com/FriederHannenheim/metadata_god.git
-      rev: HEAD
-      path: packages/metadata_god
+  metadata_god: ^1.1.0
   mobx: ^2.5.0  # MIT
   optimization_battery: ^0.0.7  # MIT
   package_info_plus: ^9.0.0
